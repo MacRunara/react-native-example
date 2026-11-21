@@ -1,0 +1,62 @@
+# =============================================================================
+# React Native CI — yarn install + Jest tests + Metro release bundles for
+# iOS and Android on a Macrunara M4 node.
+#
+# Node 20 LTS and yarn are preinstalled on Macrunara nodes — zero setup.
+# This repo intentionally has no ios//android native folders; for full native
+# builds in your own app, keep the same runner label and see the RN template:
+# https://github.com/macrunara/quickstart
+#
+# Runner label: keep exactly `runs-on: [macos, arm64, macrunara]`.
+# =============================================================================
+name: React Native CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-and-bundle:
+    runs-on: [macos, arm64, macrunara]
+
+    steps:
+      # Step 1: Checkout
+      - uses: actions/checkout@v5
+
+      # Step 2 (optional): Macrunara setup action — brand banner + environment info.
+      # Uncomment after adding the MACRUNARA_INSTALLATION_ID repository secret.
+      # - uses: macrunara/setup-action@v1
+      #   with:
+      #     installation-id: ${{ secrets.MACRUNARA_INSTALLATION_ID }}
+      #     region: auto
+
+      # Step 3: Print environment info (helps troubleshooting)
+      - name: Show environment
+        run: |
+          echo "OS:   $(uname -s) $(uname -m)"
+          node --version
+          yarn --version
+
+      # Step 4: Install dependencies
+      - name: yarn install
+        run: yarn install
+
+      # Step 5: Jest component tests
+      - name: Run tests
+        run: yarn test
+
+      # Step 6: Metro production bundles for both platforms
+      - name: Bundle JS (iOS + Android)
+        run: |
+          yarn bundle:ios
+          yarn bundle:android
+
+      # Step 7: Upload bundles
+      - name: Upload bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: rn-js-bundles
+          path: dist/
+          retention-days: 30

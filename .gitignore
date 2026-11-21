@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Metro
+.metro-health-check*
+
+# Build output
+dist/
+
+# Native scaffolding (not committed in this example)
+ios/
+android/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
