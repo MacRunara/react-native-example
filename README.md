@@ -22,7 +22,7 @@ A fork-and-run **React Native** example: `yarn install` → Jest component tests
 - A minimal RN app (counter screen) — `index.js`, `App.js`, `app.json`.
 - Jest + `react-test-renderer` component test in `__tests__/`.
 - `yarn bundle:ios` / `yarn bundle:android` scripts producing release Metro bundles into `dist/`.
-- No `ios/` / `android/` native folders — this keeps the repo tiny and the pipeline secret-free. For full native builds (`pod install` → `xcodebuild` / `gradlew assembleRelease`), scaffold them with `npx @react-native-community/cli init` in your own app, keep the same runner label, and the preinstalled CocoaPods / Android SDK / JDK take it from there — see the [RN template](https://github.com/macrunara/quickstart/blob/main/templates/react-native.yml) and [`macrunara/build-actions/react-native`](https://github.com/macrunara/build-actions/tree/main/react-native).
+- No `ios/` / `android/` native folders — this keeps the repo tiny and the pipeline secret-free. For full native builds (`pod install` → `xcodebuild` / `gradlew assembleRelease`), scaffold them with `npx @react-native-community/cli init` in your own app, keep the same runner label, and the preinstalled CocoaPods / Android SDK / JDK take it from there — see the [RN template](https://github.com/MacRunara/quickstart/blob/main/templates/react-native.yml).
 
 ## Build times (measured on Macrunara M4)
 
@@ -39,5 +39,5 @@ A fork-and-run **React Native** example: `yarn install` → Jest component tests
 ## Links
 
 - [Macrunara Quickstart & workflow templates](https://github.com/macrunara/quickstart)
-- [macrunara/build-actions/react-native](https://github.com/macrunara/build-actions/tree/main/react-native)
+- [Macrunara quickstart templates](https://github.com/MacRunara/quickstart/tree/main/templates)
 - [macrunara.com](https://macrunara.com)

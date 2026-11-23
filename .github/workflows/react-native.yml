@@ -26,10 +26,7 @@ jobs:
       - uses: actions/checkout@v5
 
       # Step 2 (optional): Macrunara setup action — brand banner + environment info.
-      # Uncomment after adding the MACRUNARA_INSTALLATION_ID repository secret.
-      # - uses: macrunara/setup-action@v1
       #   with:
-      #     installation-id: ${{ secrets.MACRUNARA_INSTALLATION_ID }}
       #     region: auto
 
       # Step 3: Print environment info (helps troubleshooting)

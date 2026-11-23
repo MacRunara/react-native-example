@@ -21,7 +21,7 @@
 
 - 最小 RN 计数器应用(`index.js`、`App.js`、`app.json`)+ Jest / react-test-renderer 组件测试;
 - `yarn bundle:ios` / `yarn bundle:android` 产出 release bundle 到 `dist/`;
-- 本仓库不含 `ios/`、`android/` 原生目录(保持精简、零 secret)。需要完整原生构建(`pod install` → `xcodebuild` / `gradlew assembleRelease`)时,在自己的应用里保留同一 runner 标签即可,节点预装的 CocoaPods / Android SDK / JDK 直接可用 —— 参考 [RN 模板](https://github.com/macrunara/quickstart/blob/main/templates/react-native.yml)与 [`macrunara/build-actions/react-native`](https://github.com/macrunara/build-actions/tree/main/react-native)。
+- 本仓库不含 `ios/`、`android/` 原生目录(保持精简、零 secret)。需要完整原生构建(`pod install` → `xcodebuild` / `gradlew assembleRelease`)时,在自己的应用里保留同一 runner 标签即可,节点预装的 CocoaPods / Android SDK / JDK 直接可用 —— 参考 [RN 模板](https://github.com/MacRunara/quickstart/blob/main/templates/react-native.yml)。
 
 ## 构建时长(实测) <!-- TODO:发布前替换为真实数据 -->
 
@@ -35,5 +35,5 @@
 ## 链接
 
 - [Macrunara Quickstart 与模板库](https://github.com/macrunara/quickstart)
-- [macrunara/build-actions/react-native](https://github.com/macrunara/build-actions/tree/main/react-native)
+- [Macrunara quickstart 模板](https://github.com/MacRunara/quickstart/tree/main/templates)
 - [macrunara.com](https://macrunara.com)
