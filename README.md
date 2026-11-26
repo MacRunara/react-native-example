@@ -1,9 +1,9 @@
-# react-native-example — React Native JS tests & Hermes bundles on Macrunara M4
+# react-native-example — React Native JS tests & Hermes bundles on Macrunara
 
 > ⚡ **[Install Macrunara](https://github.com/marketplace/macrunara)** → **[Fork](../../fork)** this repo → push to `main`: Jest tests + production **JS bundles for iOS and Android** finish in **~3 min** on Macrunara M4 runners.
 > 📊 **~3 min cold / ~1.5 min warm** — measured on a Macrunara M4 (Mac mini) node. <!-- TODO: replace with the real numbers from the first live run before publishing -->
 
-[![Built on Macrunara M4](https://img.shields.io/badge/Built%20on-Macrunara%20M4-brightgreen)](https://macrunara.com)
+[![Built on Macrunara](https://img.shields.io/badge/Built%20on-Macrunara-brightgreen)](https://macrunara.com)
 
 English | [中文](README.zh-CN.md)
 

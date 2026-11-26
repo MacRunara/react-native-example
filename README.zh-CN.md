@@ -1,9 +1,9 @@
-# react-native-example — React Native 测试与双端打包(Macrunara M4)
+# react-native-example — React Native 测试与双端打包(Macrunara)
 
 > ⚡ **[安装 Macrunara](https://github.com/marketplace/macrunara)** → **Fork** 本仓库 → 推送 `main`:Jest 测试 + iOS/Android 双端**生产环境 JS bundle** 在 **约 3 分钟**内完成。
 > 📊 **冷构建约 3 分钟 / 有缓存约 1.5 分钟**,实测于 Macrunara M4(Mac mini)节点。<!-- TODO:发布前用首次真实运行数据替换 -->
 
-[![Built on Macrunara M4](https://img.shields.io/badge/Built%20on-Macrunara%20M4-brightgreen)](https://macrunara.com)
+[![Built on Macrunara](https://img.shields.io/badge/Built%20on-Macrunara-brightgreen)](https://macrunara.com)
 
 [English](README.md) | 中文
 
